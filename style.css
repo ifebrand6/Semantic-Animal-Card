@@ -1,0 +1,130 @@
+
+body{
+    background-color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    /* display: flexbox;
+    align-items: center;
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    flex-grow: 1em; */
+    position: absolute;
+    height:100%;
+
+}
+header{
+    content: icon;
+}
+
+nav{
+    display: flex;
+    border:1px #ccc solid;
+    block-size: 5vh;
+    justify-content: space-between;
+    padding: 1em;
+}
+.pet_image  {
+    display: flex;
+    border:1px #ccc solid;
+    margin: .5em;
+    width: auto;
+    height: 40vh;
+    background-color: #00ff42;
+    border-radius: 60%;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    
+
+}
+.outer_circle{
+  /* flex-wrap: wrap; */
+  /* align-items: center;
+
+  flex-grow: 1;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(94, 128, 63);
+  border-radius: 60%;
+  margin: 25px; */
+  
+    
+
+}
+.inner_circle{
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    /* display: flex; */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    background-color: blue;
+    /* margin: 25px; */
+    margin: 0 auto;
+    border-radius: 60%;
+}
+img{
+    object-fit: fill;
+    width: 50px;
+    height: 50px;
+    max-width: ;
+    background-color: green;
+    align-self: center;
+
+}
+.major{
+    /* background-position: center; */
+    /* position: relative; */
+    /* border:1px #ccc solid; */
+    display: grid;
+}
+.line{
+    justify-self: center;
+}
+.heading  {
+    display: flex;
+    justify-content: space-between;
+}
+.info {
+    border:1px #ccc solid;
+}
+.icon {
+    border:1px #ccc solid;
+    padding-left: 3em;
+    position: relative;
+}
+.features{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    margin: 10px;
+}
+.features > span{
+    border:1px #ccc solid;
+    padding: 1rem;
+    background-color: red;
+
+}
+.story{
+    /* display: flex; */
+    border:1px #ccc solid;
+    flex-wrap: wrap;
+}
+aside {
+        display: flex;
+        border:1px #ccc solid;
+        justify-content: space-between;
+    }
+.profile > section {
+    background-color: red;
+    width: 70%;
+}
+.profile > button{
+    background-color: royalblue;
+    width: 30%;
+    height: 50px;
+}
