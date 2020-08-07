@@ -5,44 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 </head>
 
 <body>
     <main class="container">
         <nav class="nav">
-            <button>arrow</button>
-            <button>menu</button>
+            <i class="fa fa-arrow-left" aria-hidden="true" style="color: gray;"></i>
+            <i class="fas fa-ellipsis-h" aria-hidden="true"></i>
         </nav>
         <figure class="pet_image"> 
            <!-- <div class="outer_circle"> -->
                <div class="inner_circle">
-                   <img src="pet.jpg" alt="pet_name">
+                   <img src="pet.png" alt="pet_name" id="pet_pic">
                </div>
            <!-- </div> -->
         </figure>
     <div class="major">
-        <span class="line">
-            a line 
-        </span>
+        <div class="line"></div>
         <main class="heading">
             <section class="info">
-                <h4>name of pet lorem </h4>
-                <p>Lorem ipsum dolor sit amet consectetur .</p>
+                <h1>Kiba Ku Dog </h1>
+                <p><i class="fas fa-map-marker-alt"></i> Ogidi Anambra, NG (78km) .</p>
             </section>
-            <figure class="icon">heart icon</figure>
+            <figure class="icon"><i class="fa fa-heart" aria-hidden="true"></i></figure>
         </main>
         <section class="features">
-            <span>age</span>
-            <span>color</span>
-            <span>weight</span>
+            <article>7 days</article>
+            <article>Green</article>
+            <article> 20 KG
+            </article>
         </section>
         <article class="story">
-            <h2>pet story</h2>
+            <h2>Pet Story</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis veritatis officiis ducimus iusto veniam alias natus tenetur commodi, quasi expedita.</p>
         </article>
         <aside class="profile">
-            <section>profile</section>
-            <button>contact me</button>
+            <section>
+                <figure  id="profile">
+                    <img src="ife.jpeg" alt="ife">
+                </figure>
+                <section id="profile_info">
+                    <p style="margin-bottom: 0px;font-size: small;">Posted By</p>
+                    <p style="margin: 0px;font-size: smaller">Udeogu Ifechukwu</p>
+                </section>
+            </section>
+            <button>Contact Me</button>
         </aside>
     </div>
 </main>

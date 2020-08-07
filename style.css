@@ -1,16 +1,16 @@
 
 body{
-    background-color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Lato", sans-serif;
+    
 }
+h1{
+    font-size: 2rem;
+}
+p{
+    font-size: 1rem;
+}
+/* TODO put media for smaller screen and set position to absolute */
 .container{
-    /* display: flexbox;
-    align-items: center;
-    position: relative;
-    height: fit-content;
-    width: 100%;
-    flex-grow: 1em; */
-    position: absolute;
     height:100%;
 
 }
@@ -20,82 +20,100 @@ header{
 
 nav{
     display: flex;
-    border:1px #ccc solid;
-    block-size: 5vh;
     justify-content: space-between;
-    padding: 1em;
+    padding-left: 2.1em;
+    padding-right: 2.1em;
+    padding-top: 2em;
 }
 .pet_image  {
     display: flex;
-    border:1px #ccc solid;
     margin: .5em;
     width: auto;
     height: 40vh;
-    background-color: #00ff42;
+    background-color: #eff8fa;
     border-radius: 60%;
     align-items: center;
     flex-grow: 1;
     flex-shrink: 1;
-    
-
-}
-.outer_circle{
-  /* flex-wrap: wrap; */
-  /* align-items: center;
-
-  flex-grow: 1;
-  width: 100px;
-  height: 100px;
-  background-color: rgb(94, 128, 63);
-  border-radius: 60%;
-  margin: 25px; */
-  
-    
-
+    box-shadow: 2px 4px 1rem 0px #71b7bf4f;
 }
 .inner_circle{
-    /* flex-grow: 1; */
-    /* flex-shrink: 1; */
-    /* display: flex; */
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    align-items: center;
     width: 70%;
     height: 70%;
-    background-color: blue;
-    /* margin: 25px; */
+    background-color: #bfeff5;
     margin: 0 auto;
     border-radius: 60%;
+    justify-content: center;
 }
-img{
-    object-fit: fill;
-    width: 50px;
-    height: 50px;
-    max-width: ;
-    background-color: green;
-    align-self: center;
+#pet_pic{
+    height: 14em;
+    margin-top: -2em;
 
 }
 .major{
-    /* background-position: center; */
-    /* position: relative; */
-    /* border:1px #ccc solid; */
     display: grid;
+    border-top-right-radius: 3.5rem;
+    border-top-left-radius: 4.5rem;
+    margin-top: -1.85rem;
+    margin-left: 0px;
+    background-color: #fff;
+    box-shadow: 1px 8px 1rem -1px #000000ad;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 1em;
 }
-.line{
-    justify-self: center;
-}
+
 .heading  {
     display: flex;
     justify-content: space-between;
 }
 .info {
-    border:1px #ccc solid;
+    margin: 0px;    
+    flex-direction: column;
+    flex-basis: 100%;
+    padding-left: 1em;
 }
+.info > h1 {
+    margin: 0px;
+    width: 130%;
+}
+.info > p{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    width: 141%;
+}
+.info > p> i {
+    padding-right: 10px;
+}
+
 .icon {
-    border:1px #ccc solid;
-    padding-left: 3em;
-    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 4rem;
+    background-color: rgb(247, 109, 67);
+    display: flex;
+    margin-right: 1em;
+    margin-top: -1px;
+    border-radius: 100%;
+    box-shadow: 0 0.4em 0.4rem rgb(183 102 76 / 46%);
+
+}
+.line{
+    width: 7%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: rgb(214, 211, 211);
+    margin-top: 5%;
+    margin-left: 46.5%;
+    margin-bottom: 1em;
+}
+.icon > i {
+    color: white;
+    font-size: 1.7em;
 }
 .features{
     display: grid;
@@ -103,28 +121,47 @@ img{
     grid-gap: 2em;
     margin: 10px;
 }
-.features > span{
-    border:1px #ccc solid;
+.features > article{
     padding: 1rem;
-    background-color: red;
+    border: 1px solid rgba(122, 122, 122, .1);
+    border-radius: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
-.story{
-    /* display: flex; */
-    border:1px #ccc solid;
-    flex-wrap: wrap;
-}
+
 aside {
         display: flex;
-        border:1px #ccc solid;
         justify-content: space-between;
+        margin-bottom: 1em;
     }
 .profile > section {
-    background-color: red;
-    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2em;
+}
+#profile > img{ 
+    width: 50px;
+    height: 50px;  
+    border-radius: 100px;
+    box-shadow: -1px 0rem 1rem rgba(0, 0, 0, .5); 
+}
+#profile_info{
+    margin-left: -2em;
 }
 .profile > button{
-    background-color: royalblue;
-    width: 30%;
-    height: 50px;
+    padding: 1rem 2.5rem; 
+    border-radius: 47rem;
+    color: #fff;
+    background-color: rgba(9, 149, 243, 0.5);
+    box-shadow: 1px 0rem 0.6rem rgb(84 100 113 / 19%);
+    height: 4em;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    margin: 1em;
 }
